@@ -5,51 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>imsivamogili | Bug Bounty Hunter</title>
   <style>
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: url('hacker.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ff0000;
       text-align: center;
+      min-height: 100vh;
+      backdrop-filter: blur(3px);
     }
+
     header {
-      background: #111;
+      background: rgba(0, 0, 0, 0.7);
       padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
     }
+
     nav a {
-      color: #f0f0f0;
+      color: #ff0000;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      text-shadow: 0 0 10px #ff0000;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      color: #00ff88;
+      color: white;
+      text-shadow: 0 0 20px #ffffff;
     }
+
     main {
-      margin-top: 60px;
+      margin-top: 120px;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #ff0000;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      text-shadow: 0 0 20px #ff0000;
     }
+
+    p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
     .links a {
       display: inline-block;
       margin: 10px;
-      color: #00ff88;
+      color: #000;
+      background: #ff0000;
       text-decoration: none;
-      border: 1px solid #00ff88;
-      padding: 6px 12px;
-      border-radius: 5px;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 8px 14px;
       transition: 0.3s;
     }
+
     .links a:hover {
-      background-color: #00ff88;
-      color: #111;
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 20px #ff0000;
     }
+
     footer {
       margin-top: 60px;
+      color: #aaa;
       font-size: 0.9rem;
-      color: #888;
     }
   </style>
 </head>
@@ -63,16 +99,16 @@
   </header>
 
   <main>
-    <h1>Hi, I am <span style="color:#00ff88;">sivamogili</span> 👋</h1>
+    <h1>Hi, I am <span style="color:white;">sivamogili</span> 👾</h1>
     <p>I like doing various things related to hacking.</p>
     <p>I do full-time bug bounty hunting, research web security, and automate vulnerabilities.</p>
 
     <div class="links">
-      <a href="https://hackerone.com/imsivamogili" target="_blank">HackerOne Profile</a>
-      <a href="https://bugcrowd.com/imsivamogili" target="_blank">Bugcrowd Profile</a>
+      <a href="https://hackerone.com/imsivamogili" target="_blank">HackerOne</a>
+      <a href="https://bugcrowd.com/imsivamogili" target="_blank">Bugcrowd</a>
     </div>
 
-    <p style="margin-top:40px;">Latest posts...........</p>
+    <p style="margin-top:40px;">Latest posts coming soon...</p>
   </main>
 
   <footer>
