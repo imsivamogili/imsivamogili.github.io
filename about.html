@@ -5,36 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | imsivamogili</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Courier New', monospace;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
+      background: url('hacker.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ff0000;
       text-align: center;
-      margin: 0;
+      min-height: 100vh;
+      backdrop-filter: blur(3px);
     }
+
     header {
-      background: #111;
+      background: rgba(0, 0, 0, 0.7);
       padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
     }
+
     nav a {
-      color: #f0f0f0;
+      color: #ff0000;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      text-shadow: 0 0 10px #ff0000;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      color: #00ff88;
+      color: white;
+      text-shadow: 0 0 20px #ffffff;
     }
+
     main {
-      margin-top: 60px;
+      margin-top: 120px;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #ff0000;
+      max-width: 700px;
     }
+
     h1 {
-      color: #00ff88;
+      font-size: 2.5rem;
+      text-shadow: 0 0 20px #ff0000;
     }
+
+    p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      color: #000;
+      background: #ff0000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 8px 14px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 20px #ff0000;
+    }
+
     footer {
       margin-top: 60px;
+      color: #aaa;
       font-size: 0.9rem;
-      color: #888;
     }
   </style>
 </head>
@@ -48,10 +102,16 @@
   </header>
 
   <main>
-    <h1>About</h1>
-    <p>Hey! I’m <strong>Lakshmi Siva Rama Krishna Mogili</strong> — also known as <span style="color:#00ff88;">imsivamogili</span>.</p>
-    <p>I love breaking web apps, writing about logic bugs, and building automation tools.</p>
-    <p>This site documents my journey as a bug bounty hunter.</p>
+    <h1>About <span style="color:white;">imsivamogili</span> 👨‍💻</h1>
+    <p>Hey! I’m <b> Lakshmi Siva Rama Krishna Mogili </b> — also known as <b>imsivamogili</b>.</p>
+    <p>I love breaking web applications, finding logic flaws, and automating vulnerabilities.</p>
+    <p>This website is my personal space to share bug bounty experiences, write-ups, and research on web security.</p>
+    <p>When I’m not hacking, I enjoy learning, experimenting with automation tools, and helping others understand web security.</p>
+
+    <div class="links">
+      <a href="https://hackerone.com/imsivamogili" target="_blank">HackerOne</a>
+      <a href="https://bugcrowd.com/imsivamogili" target="_blank">Bugcrowd</a>
+    </div>
   </main>
 
   <footer>
