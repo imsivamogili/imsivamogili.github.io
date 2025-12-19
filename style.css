@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f14;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid #1f2933;
+  padding: 16px 0;
+}
+
+nav {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.nav-links a {
+  margin-left: 16px;
+  color: #9ca3af;
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.intro h1 span {
+  color: #38bdf8;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.description {
+  margin-bottom: 16px;
+  color: #d1d5db;
+}
+
+.tags span {
+  display: inline-block;
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 6px 10px;
+  margin: 6px 6px 0 0;
+  font-size: 0.85rem;
+}
+
+.platforms {
+  margin-top: 20px;
+}
+
+.platforms a {
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.posts {
+  margin-top: 80px;
+}
+
+.posts h2 {
+  margin-bottom: 24px;
+}
+
+.post {
+  border-bottom: 1px solid #1f2937;
+  padding-bottom: 24px;
+}
+
+.post-tags {
+  color: #60a5fa;
+  font-size: 0.85rem;
+}
+
+.post h3 {
+  margin: 8px 0;
+}
+
+.post-meta {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
