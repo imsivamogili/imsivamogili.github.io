@@ -2,138 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>imsivamogili | Bug Bounty Hunter</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Courier New', monospace;
-      background: url('hacker.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #ff0000;
-      text-align: center;
-      min-height: 100vh;
-      backdrop-filter: blur(3px);
-    }
-    header {
-      background: rgba(0,0,0,0.7);
-      padding: 18px 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: #ff0000;
-      margin: 0 14px;
-      text-decoration: none;
-      font-weight: bold;
-      text-shadow: 0 0 10px #ff0000;
-      transition: 0.18s;
-    }
-    nav a:hover { color: #fff; text-shadow: 0 0 20px #fff; }
-    main {
-      margin: 110px auto 40px;
-      background: rgba(0,0,0,0.62);
-      display: inline-block;
-      padding: 40px 48px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px #ff0000;
-      max-width: 900px;
-      width: calc(100% - 48px);
-    }
-    h1 {
-      font-size: 2.6rem;
-      text-shadow: 0 0 20px #ff0000;
-    }
-    .subtitle {
-      color: #fff;
-      margin-top: 8px;
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-    .bio {
-      color: #fff;
-      margin-top: 18px;
-      text-align: left;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .bio p { margin-bottom: 12px; }
-    .meta-list {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 16px;
-    }
-    .meta {
-      background: rgba(255,0,0,0.95);
-      color: #000;
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .links { margin-top: 20px; }
-    .links a {
-      display: inline-block;
-      margin: 8px;
-      color: #000;
-      background: #ff0000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      padding: 8px 14px;
-      transition: 0.22s;
-    }
-    .links a:hover { background: #fff; color: #000; box-shadow: 0 0 20px #ff0000; }
-    footer { margin-top: 32px; color: #aaa; font-size: 0.9rem; }
-    @media (max-width:640px) {
-      h1 { font-size: 1.9rem; }
-      main { padding: 28px 18px; width: calc(100% - 36px); }
-      .bio { font-size: 0.98rem; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sivamogili | Bug Bounty Hunter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="/" class="logo">imsivamogili</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <h1>Hi, I am <span style="color:white;">sivamogili</span> 👾</h1>
-    <div class="subtitle">Full-time bug bounty hunter • Web security researcher • Automator of defensive tools</div>
+<main>
+  <section class="intro">
+    <h1>Hi, I am <span>sivamogili</span> 👾</h1>
+    <p class="subtitle">
+      Full-time bug bounty hunter • Web security researcher • Automation builder
+    </p>
 
-    <section class="bio" aria-label="bio">
-      <p><strong>I am a full-time bug bounty hunter, driven by a passion for ethical hacking and securing the digital world.</strong> I hunt for high-impact vulnerabilities, write clear, reproducible reports, and build automation to scale research and remediation.</p>
+    <p class="description">
+      I hunt for high-impact vulnerabilities across web and API surfaces.
+      My focus is on logic flaws, authentication issues, authorization bypasses,
+      and automation that helps scale bug discovery.
+    </p>
 
-      <p>My work focuses on logic flaws, API/business-logic vulnerabilities, authentication and session issues, and automation that helps me triage and confirm findings faster. I report responsibly and help teams understand the risk and mitigation steps.</p>
+    <p class="description">
+      I report responsibly, write clear PoCs, and help security teams understand
+      real-world impact and remediation.
+    </p>
 
-      <p>Outside of systems and payloads, I document my findings as writeups and tooling notes so other researchers can learn faster and defenders can fix issues quicker.</p>
-
-      <div class="meta-list" role="list">
-        <a class="meta" href="#">Logic bugs</a>
-        <a class="meta" href="#">API security</a>
-        <a class="meta" href="#">Automation</a>
-        <a class="meta" href="#">Responsible disclosure</a>
-      </div>
-    </section>
-
-    <div class="links" role="navigation" aria-label="profiles">
-      <a href="https://hackerone.com/imsivamogili" target="_blank" rel="noopener noreferrer">HackerOne</a>
-      <a href="https://bugcrowd.com/imsivamogili" target="_blank" rel="noopener noreferrer">Bugcrowd</a>
-      <a href="about.html" style="background:transparent;border:1px solid #ff0000;color:#ff0000;padding:8px 12px;">Read more →</a>
+    <div class="tags">
+      <span>Logic Bugs</span>
+      <span>API Security</span>
+      <span>Automation</span>
+      <span>Responsible Disclosure</span>
     </div>
 
-    <p style="margin-top:26px;color:#ccc;">Latest posts coming soon...</p>
-  </main>
+    <div class="platforms">
+      <a href="#" target="_blank">HackerOne</a>
+      <a href="#" target="_blank">Bugcrowd</a>
+    </div>
+  </section>
 
-  <footer>© 2025 imsivamogili</footer>
+  <section class="posts">
+    <h2>Blog Posts</h2>
+
+    <div class="post">
+      <div class="post-tags">bugbounty • logic-flaw</div>
+      <h3>Latest posts coming soon…</h3>
+      <p class="post-meta">imsivamogili • 2025</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 imsivamogili
+</footer>
 
 </body>
 </html>
