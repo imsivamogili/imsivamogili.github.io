@@ -1,0 +1,28 @@
+<section class="intro">
+  <div class="intro-wrapper">
+
+    <img src="assets/avatar.png" alt="sivamogili avatar" class="avatar"/>
+
+    <div class="intro-text">
+      <h1>Hi, I am <span>sivamogili</span> 👾</h1>
+
+      <p class="subtitle">
+        Full-time bug bounty hunter • Web security researcher • Automation builder
+      </p>
+
+      <p class="description">
+        I hunt for high-impact vulnerabilities across web and API surfaces.
+        My focus is on logic flaws, authentication issues, authorization bypasses,
+        and automation that helps scale bug discovery.
+      </p>
+
+      <div class="tags">
+        <span>Logic Bugs</span>
+        <span>API Security</span>
+        <span>Automation</span>
+        <span>Responsible Disclosure</span>
+      </div>
+    </div>
+
+  </div>
+</section>
